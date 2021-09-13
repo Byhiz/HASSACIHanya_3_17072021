@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(lpdg.html) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+
+    font-family: "Shrikhand", cursive;
+    src: url(lpdg.html) format("trutype");
+        font-weight: normal;
+        font-style: normal;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    width: 100%;
+    padding: 19px 0;
+    padding-top: 2em;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: -1.75em;
+}
+
+header i{
+ margin-left: 2em;
+ font-size: 1.5em;
+}
+
+.carte__pic img{
+    width: 100%;
+    height: 25em;
+    position: relative;
+    object-fit: cover;
+}
+
+#menu__titre{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Shrikhand", cursive;
+    margin-top: 2em;
+    margin-right: 2.5em;
+    margin-left: 1em;
+}
+
+#menu__titre i{
+    margin-top: 0.50em;
+}
+
+#menu{
+    background-color: #f6f6f6;
+    border-radius: 35px 35px 0px 0px;
+    margin-top: -6em;
+    position: relative;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .minicard {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard2 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard3 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+.minicard{
+    display: flex;
+    flex-direction: column;
+}
+
+.minicard__food{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f6f6f6;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 9px;
+    box-shadow: 0px 5px 10px #353535;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.categorie {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 9px;
+    font-size: 1.3em;
+}
+
+.minicard__food--prix{
+    margin-right: 2em;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+}
+
+.space{
+    display: flex;
+}
+
+.minicard__food:hover i{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+.check{
+    background-color: #99e2d0;
+    margin: 0px 3px 0px 0px;
+    border-radius: 0px 15px 15px 0px;
+    width: 70px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.50em;
+    margin-right: -70px;
+    animation: moveback 1s forwards;
+    transition-duration: 1s;
+}
+
+.minicard__food:hover .check {
+    transform: translate(50px,0px);
+    animation: move 1s forwards;
+    transition-duration: 1s;
+    margin-right: 0px;
+}
+
+@keyframes move{
+    from{transform: translateX(65px);}
+    to{transform: translateX(5px);}
+}
+
+@keyframes moveback {
+    from{transform: translateX(5px);}
+    to{transform: translateX(65px);}
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    background-color: #99e2d0;
+    margin-left: 9px;
+    margin-top: -1.3em;
+    margin-bottom: 1em;
+}
+
+footer{
+    background-color: #353535;
+    position: absolute;
+    width: 96%;
+    color: white;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header a{
+    color: black;
+}
+
+#footerlogo{
+    font-family: "Shrikhand", cursive;
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+.navfooter{
+    font-family: "Roboto", sans-serif;
+    margin-top: 1.7em;
+}
+
+#navfootera{
+    margin: 1.6em;
+    margin-top: -1em;
+}
+
+#navfooterb{
+    margin: 1.7em;
+    margin-top: -1em;
+}
+
+#menu__command{
+    border: 1px transparent;
+    box-shadow: 7px 7px 10px #cecece;
+    display: flex;
+    border-radius: 15em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-content: center;
+    width: 7em;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 45%;
+    background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+
+#menu__command:hover{
+    box-shadow: 9px 9px 20px #353535;
+    opacity: 0.85;
+}
+
+/* Media Query mobile avec 768px < W < 1024px */
+
+@media screen and (max-width: 768px){
+    footer{
+        width: 88%;
+    }
+
+    header i{
+        margin-left: 0.7em;
+    }
+
+    .minicard__food{
+        width: 90%;
+    }
+
+    .minicard__food p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 80%;
+        font-size: 0.9em;
+        margin-top: 0.9em;
+    }
+
+    #menu__command{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .minicard__food--prix{
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+}
+
+/* Media Query tablette avec 768px < W < 1024px */
+
+@media  screen and (min-width: 768px) and (max-width:  1023px){
+    #menu__command{
+        margin-left: 300px;
+    }
+
+    footer{
+        width: 94%;
+    }
+
+    .categorie{
+        margin-top: 1em;
+    }
+}
